@@ -1,21 +1,26 @@
 import {Flex,Box,Heading,Button,ButtonGroup,Spacer} from "@chakra-ui/react"
+import React from "react";
 function Navbar(){
-return (
+const logo="https://prod.smassets.net/assets/website/2.193.0/images/logo-surveymonkey.svg"
+  return (
   
- <Flex minWidth='max-content' alignItems='center' gap='2'>
+  <div style={{boxShadow:" 0 3px 10px rgb(0 0 0 / 0.2)"}}>
+<Flex minWidth='max-content' alignItems='center' gap='1'>
   <Box p='2'>
-    <Heading size='md'>Survey Monkey</Heading>
+    <Heading size='md'><img src={logo}/></Heading>
   </Box>
   <Spacer />
-  <ButtonGroup gap='2'>
+  <ButtonGroup gap='1'>
     <Button colorScheme='teal'>Create Surveys</Button>
     <Button colorScheme='teal'>Collect Responses</Button>
     <Button colorScheme='teal'>Analize Reports</Button>
     <Button colorScheme='teal'>Plans & Pricing</Button>
-    <Button colorScheme='teal'>SignUp Free </Button>
+    <Button style={{backgroundColor:"Yellow",color:"teal"}} colorScheme='teal'>SignUp Free </Button>
 
   </ButtonGroup>
 </Flex>
+  </div>
+ 
   
  
 )
