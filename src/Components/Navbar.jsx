@@ -1,6 +1,11 @@
 import {Flex,Box,Heading,Button,ButtonGroup,Spacer} from "@chakra-ui/react"
 import React from "react";
 function Navbar(){
+  const handleLogin=()=>{
+    // <a src="./Components/Login"></a>
+    // window.href="./Components/Login"
+  
+  }
 const logo="https://prod.smassets.net/assets/website/2.193.0/images/logo-surveymonkey.svg"
   return (
   
@@ -15,7 +20,7 @@ const logo="https://prod.smassets.net/assets/website/2.193.0/images/logo-surveym
     <Button colorScheme='teal'>Collect Responses</Button>
     <Button colorScheme='teal'>Analize Reports</Button>
     <Button colorScheme='teal'>Plans & Pricing</Button>
-    <Button style={{backgroundColor:"Yellow",color:"teal"}} colorScheme='teal'>SignUp Free </Button>
+    <Button onClick={handleLogin} style={{backgroundColor:"Yellow",color:"teal"}} colorScheme='teal'>SignUp Free </Button>
 
   </ButtonGroup>
 </Flex>
